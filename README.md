@@ -1,4 +1,4 @@
-# Reach Builder Challenge Week 3 - Level 3
+# Reach Builder Challenge Week 3 - Level 2
 
 This project was created based on the Reach Builder Week 3 Challenge.
 The specifications of the challenge are:
