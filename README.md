@@ -3,16 +3,37 @@
 This project was created based on the Reach Builder Week 3 Challenge.
 The specifications of the challenge are:
 
-- Build out a front end GUI
-- Use the framework of your choice
-- It will contain as many files as you need to complete the task
-- Use a testnet token
-- Create your own testnet token and import the asset ID number from the Deployer UI
-- Allow users to submit their wallets to the application
-- The first 5 users to submit their wallets are whitelisted
-- Users after 5 receive an error message stating the list is full
-- The whitelisted addresses receive tokens
+- Write a program that stores a whitelisted wallet Address. 
+- Address must be stored in Map or Set 
+- Hardcode this address, or set it to the known Bob address
+- Read about Untrustworthy Maps
+- Display status messages to the console
+- Deploying / attaching notifications
+- Display whitelisted wallet address
+- Incorporate a non-network token.
+- Use launchToken to create a new token
+- Distribute your tokens to the whitelisted wallet address
+- Display status messages to the console
+- Was the wallet address approved?
+- Display token properties (name, unit, quantity)
+- Did your tokens successfully deliver?
+- This should be done in 2 files, index.rsh and index.mjs
 
-The contract allows the deployer to specify a number of addresses
-permitted to submit their wallets for whitelisting
-and the number of tokens to be distributed per address
+The implementation in this example program allows the deployer to specify a number of addresses
+that may submit their wallets for whitelisting,
+and the number of non-network tokens that are claimable per address.
+
+The application should be run in at least two terminal windows.
+Use `./reach run` to execute the program in the first terminal window
+and follow the prompts to deploy the contract.
+Then copy the contract string and execute the the same command in a second terminal window
+to act as an Attacher to the contract by pasting the contract string.
+The program will request to whitelist an address and claim the non-network tokens.
+
+The configuration options available to the Deployer are as follows:
+1. The number of addresses that may be permitted to be whitelisted in the contract
+2. The number of tokens each whitelisted address may claim from the contract
+
+In this sample program, the token will be automatically generated,
+however the deployment process may be adjusted to utilize
+an existing token in the Deployer's account.
