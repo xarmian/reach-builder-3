@@ -10,7 +10,7 @@
 
 # production
 /build
-/contract/.reach
+.reach
 
 # misc
 .DS_Store
